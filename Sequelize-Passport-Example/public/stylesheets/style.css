@@ -2,3 +2,37 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
+
+.navbar-default {
+  background-color: navy;
+}
+
+.btn {
+  background-color: navy;
+  color: antiquewhite;
+}
+
+.navbar-brand {
+  color: antiquewhite;
+}
+
+body {
+  background-image:url(https://cdn.pixabay.com/photo/2016/11/10/15/24/runner-1814460_960_720.jpg);
+  background-size: cover;
+  color:black;
+  font-weight: bolder;
+  font-size: 24px
+}
+
+#log-in {
+  color: antiquewhite;
+}
+
+#sign-in{
+  color: antiquewhite;
+}
+
+.form-top {
+  font-size: 35px;
+}
+
