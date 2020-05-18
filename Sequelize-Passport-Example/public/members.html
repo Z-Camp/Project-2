@@ -31,14 +31,14 @@
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
         <h3 class="exercise-choice">Please Select Your Exercise</h3>
-        <button type="button" class="btn btn-primary btn-lg btn-block" id="running">Running</button>
-        <button type="button" class="btn btn-primary btn-lg btn-block" id="walking">Walking</button>
-        <button type="button" class="btn btn-primary btn-lg btn-block" id="cycling">Cycling</button>
-        <button type="button" class="btn btn-primary btn-lg btn-block" id="swimming">Swimming</button>
+        <button onclick="progressToggle()" type="button" class="btn btn-primary btn-lg btn-block" id="running">Running</button>
+        <button onclick="progressToggle()" type="button" class="btn btn-primary btn-lg btn-block" id="walking">Walking</button>
+        <button onclick="progressToggle()" type="button" class="btn btn-primary btn-lg btn-block" id="cycling">Cycling</button>
+        <button onclick="progressToggle()" type="button" class="btn btn-primary btn-lg btn-block" id="swimming">Swimming</button>
       </div>
     </div>
   </div>
-  <div class="container-fluid">
+  <div class="container-fluid" id="progress-entries" style="visibility: hidden;">
     <div class="row">
       <div class="col-md-3 col-md-offset-3">
         <form class="form-inline">
