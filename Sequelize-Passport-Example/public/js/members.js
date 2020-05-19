@@ -14,3 +14,6 @@ function progressToggle() {
     x.style = "show";
   }
 };
+$( function() {
+    $( "#datepicker" ).datepicker();
+  } );
