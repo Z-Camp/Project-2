@@ -6,6 +6,7 @@ $(document).ready(function () {
   });
 });
 
+
 function progressToggle() {
   let x = document.getElementById("progress-entries")
   if (x.style === "hidden") {
@@ -14,6 +15,3 @@ function progressToggle() {
     x.style = "show";
   }
 };
-$( function() {
-    $( "#datepicker" ).datepicker();
-  } );
