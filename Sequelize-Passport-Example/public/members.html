@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
   <link href="stylesheets/style.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -31,21 +33,22 @@
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
         <h3 class="exercise-choice">Please Select Your Exercise</h3>
-        <button type="button" class="btn btn-primary btn-lg btn-block" id="running">Running</button>
-        <button type="button" class="btn btn-primary btn-lg btn-block" id="walking">Walking</button>
-        <button type="button" class="btn btn-primary btn-lg btn-block" id="cycling">Cycling</button>
-        <button type="button" class="btn btn-primary btn-lg btn-block" id="swimming">Swimming</button>
+        <button onclick="progressToggle()" type="button" class="btn btn-primary btn-lg btn-block" id="running">Running</button>
+        <button onclick="progressToggle()" type="button" class="btn btn-primary btn-lg btn-block" id="walking">Walking</button>
+        <button onclick="progressToggle()" type="button" class="btn btn-primary btn-lg btn-block" id="cycling">Cycling</button>
+        <button onclick="progressToggle()" type="button" class="btn btn-primary btn-lg btn-block" id="swimming">Swimming</button>
       </div>
     </div>
   </div>
-  <div class="container-fluid">
+  <div class="container-fluid" id="progress-entries" style="visibility: hidden;">
     <div class="row">
       <div class="col-md-3 col-md-offset-3">
         <form class="form-inline">
           <div class="form-group mb-2">
             <input type="text" class="form-control-plaintext" id="distance" placeholder="Distance (miles or meters)">
           </div>
-          <button type="submit" class="btn btn-primary mb-2" id="distance-button" ;">Submit</button>
+          <button type="submit" class="btn btn-primary mb-2" id="distance-button-miles">Miles</button>
+          <button type="submit" class="btn btn-primary mb-2" id="distance-button-meters">Meters</button>
         </form>
       </div>
 
@@ -59,12 +62,16 @@
         </form>
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+       <p> <input type="text" id="calendar-drop" placeholder="mm/dd/yyyy"></div> </p>
+      </div>
+    </div>
   </div>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/members.js"></script>
-
 </body>
 
 </html>
