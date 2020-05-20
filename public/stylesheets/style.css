@@ -35,4 +35,8 @@ body {
 .form-top {
   font-size: 35px;
 }
-
+#final-submit{
+  float: right;
+  width: 50%;
+  height: 50px;
+}
