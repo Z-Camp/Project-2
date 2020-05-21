@@ -9,10 +9,10 @@ form.login {
 
 .btn {
   background-color: navy;
-  color: antiquewhite;
+  color: antiqueantiquewhite;
 }
 
-.navbar-brand {
+.navbar-brand, #login, #signin {
   color: antiquewhite;
 }
 
@@ -24,19 +24,72 @@ body {
   font-size: 24px
 }
 
-#log-in {
-  color: antiquewhite;
-}
 
-#sign-in{
-  color: antiquewhite;
-}
 
-.form-top {
+.form-top, h2 {
   font-size: 35px;
 }
-#final-submit{
-  float: right;
-  width: 50%;
-  height: 50px;
+
+#chart {
+  background-color: antiquewhite;
+}
+
+.calc {
+  background-color:gray;
+  max-width: 312px;
+  padding-bottom: 20px;
+  border-style: double;
+  border-color: navy;
+  border-width: thick;
+  opacity: 0.85;
+}
+
+h4 {
+  color: antiquewhite;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px navy;
+}
+
+.submit {
+  background-color: navy;
+  color: antiquewhite;
+}
+
+#weight, #feet, #inches, #distance, #hours, #minutes, #seconds {
+  position: relative;
+  left: 3px;
+  border-color: #a5a5ad;
+  border-style: outset;
+  border-width: medium;
+}
+
+#bmi-calc, #pace-calc {
+  position: relative;
+  left: 103px;
+  margin-bottom: 7px;
+  border-color: darkgrey;
+  border-style: double;
+  border-width: thin;
+}
+
+#result, #range, #mph {
+  color: antiquewhite;
+  font-weight: lighter;
+  font-size: 21px;
+  text-shadow: 2px 2px 2px navy;
+}
+
+#bmi-form {
+    height: 478px;
+}
+
+#mpm {
+  color: antiquewhite;
+  font-weight: lighter;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px navy;
+
 }
