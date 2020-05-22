@@ -1,3 +1,4 @@
+let userID = require("userID");
 $(document).ready(function () {
   var actType = ""
 
@@ -6,8 +7,6 @@ $(document).ready(function () {
   $.get("/api/user_data").then(function (data) {
     $(".member-name").text(data.email);
   });
-
-
 
   $(".actType").on("click", function(){
     actType = $(this).data("type");
@@ -23,21 +22,20 @@ $(document).ready(function () {
       activityType: actType,
       time: $("#time").val().trim(),
       distance:$("#distance").val().trim(),
-      date: (dt.getMonth()+1)+"/"+dt.getDate()+"/"+dt.getFullYear()
+      date: (dt.getMonth()+1)+"/"+dt.getDate()+"/"+dt.getFullYear(),
+      UserId: userID
     };
 
     console.log(newActivity)
     // Send the POST request. (Copied from Cats App...will be referring back to that)
-    // $.ajax("/api/user_data", {
-    //   type: "POST",
-    //   data: newActivity
-    // }).then(
-    //   function () {
-    //     console.log("created new workout session");
-    //     // Reload the page to get the updated list
-    //     location.reload();
-    //   }
-    // );
+    $.post("/api/activities", newActivity)
+      .then(
+      function () {
+        console.log("created new workout session");
+        // Reload the page to get the updated list
+        location.reload();
+      }
+    );
   });
 
 });

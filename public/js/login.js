@@ -30,6 +30,7 @@ $(document).ready(function() {
     })
       .then(function() {
         window.location.replace("/members");
+        let userID = response.id
         // If there's an error, log the error
       })
       .catch(function(err) {
@@ -37,3 +38,5 @@ $(document).ready(function() {
       });
   }
 });
+
+module.exports = userID

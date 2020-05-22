@@ -50,4 +50,28 @@ module.exports = function(app) {
       });
     }
   });
+
+  // POST route for saving a new activity
+  app.post("/api/activities", function(req, res) {
+    console.log("line 65", req.body);
+    db.Activity.create({
+      activityType: req.body.activityType,
+      time: req.body.time,
+      distance: req.body.distance,
+      dateTime: req.body.date,
+      memberID: req.body.memberID
+    }).then(function(dbActivity) {
+      res.json(dbActivity);
+    });
+  });
+  // GET route for returning all activity Data
+  app.get("/api/activities/:userId", function(req, res) {
+    db.Activity.findAll({
+      where: {
+        memberID: req.params.userId
+      }
+    }).then(function(dbActivity) {
+      res.json(dbActivity);
+    });
+  });
 };
