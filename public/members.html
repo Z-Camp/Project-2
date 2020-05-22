@@ -20,6 +20,9 @@
         <a class="navbar-brand" href="progress.html" style="color: antiquewhite;">
           Progress
         </a>
+        <a class="navbar-brand" href="tools.html" style="color: antiquewhite;">
+          Tools
+        </a>
       </div>
     </div>
   </nav>
@@ -32,10 +35,17 @@
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
         <h3 class="exercise-choice">Please Select Your Exercise</h3>
-        <button onclick="progressToggle()" type="button" class="btn btn-primary btn-lg btn-block actType" data-type="running">Running</button>
-        <button onclick="progressToggle()" type="button" class="btn btn-primary btn-lg btn-block actType" data-type="walking">Walking</button>
-        <button onclick="progressToggle()" type="button" class="btn btn-primary btn-lg btn-block actType" data-type="cycling">Cycling</button>
-        <button onclick="progressToggle()" type="button" class="btn btn-primary btn-lg btn-block actType" data-type="swimming">Swimming</button>
+        <form>
+          <input type="radio" name="activity" id="walking" value="walking">
+          <label for="walking">Walking</label>
+          <input type="radio" name="activity" id="running" value="running">
+          <label for="running">Running</label>
+          <input type="radio" name="activity" id="swimming" value="swimming">
+          <label for="swimming">Swimming</label>
+          <input type="radio" name="activity" id="cycling" value="cycling">
+          <label for="cycling">Cycling</label>
+          <input type="submit" onclick="progressToggle()">
+          </form>
       </div>
     </div>
   </div>

@@ -43,6 +43,7 @@ $(document).ready(function () {
 });
 
 function progressToggle() {
+  event.preventDefault();
   let x = document.getElementById("progress-entries")
   if (x.style === "hidden") {
     x.style = "none";
