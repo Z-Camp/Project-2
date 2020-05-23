@@ -1,13 +1,11 @@
 $(document).ready(function () {
   var actType = ""
-  let userId
+  let userId;
   // This file just does a GET request to figure out which user is logged in
   // and updates the HTML on the page
   $.get("/api/user_data").then(function (data) {
     $(".member-name").text(data.email);
-    console.log(data);
     userId = data.id
-    console.log ({userId})
   });
 
   $(".actType").on("click", function(){
