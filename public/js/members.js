@@ -1,11 +1,13 @@
-let userID = require("userID");
 $(document).ready(function () {
   var actType = ""
-
+  let userId
   // This file just does a GET request to figure out which user is logged in
   // and updates the HTML on the page
   $.get("/api/user_data").then(function (data) {
     $(".member-name").text(data.email);
+    console.log(data);
+    userId = data.id
+    console.log ({userId})
   });
 
   $(".actType").on("click", function(){
@@ -23,7 +25,7 @@ $(document).ready(function () {
       time: $("#time").val().trim(),
       distance:$("#distance").val().trim(),
       date: (dt.getMonth()+1)+"/"+dt.getDate()+"/"+dt.getFullYear(),
-      UserId: userID
+      userId: userId
     };
 
     console.log(newActivity)
