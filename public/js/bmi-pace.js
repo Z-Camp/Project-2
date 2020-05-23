@@ -26,7 +26,7 @@ function bmi () {
     //function to calculate pace
 function calcPace() {
     //getting user input
-    let distance = Number(document.getElementById("distance").value)
+    let miles = Number(document.getElementById("miles").value)
     let minutes = Number(document.getElementById("minutes").value)
     let hours = Number(document.getElementById("hours").value)
     //converting hours to minutes
@@ -35,8 +35,8 @@ function calcPace() {
     //getting total minutes
     let totalMins = minutes + hours;
     //getting pace  minutes and seconds
-    let pace = totalMins / distance
-    let paceSecs = seconds / distance
+    let pace = totalMins / miles
+    let paceSecs = seconds / miles
     paceMins = Math.floor(pace)
     paceSecs = Math.floor(paceSecs)
     //adding zero in front of number in seconds if seconds is less than 10

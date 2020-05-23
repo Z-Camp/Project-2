@@ -28,41 +28,51 @@ body {
   background-color: antiquewhite;
 }
 
-.calc {
-  background-color:gray;
-  max-width: 312px;
-  padding-bottom: 20px;
+.calc, .login, .signup, #activities {
   border-style: double;
   border-color: navy;
   border-width: thick;
   opacity: 0.85;
+  background-color:gray;
+}
+
+.calc {
+  max-width: 312px;
+  padding-bottom: 20px;
+ 
 }
 
 .login, .signup {
-  background-color: gray;
-  opacity: 0.85;
   padding: 20px;
-  border-style: double;
-  border-color: navy;
-  border-width: thick;
-  
+
 }
 
 #activities {
-  background-color:gray;
-  border-style: double;
-  border-color: navy;
-  border-width: thick;
-  opacity: 0.85;
   padding-bottom: 15px;
 }
 
-h4, #sign-in, #log-in {
+h4, #sign-in, #log-in, #result, #range, #mph, label, #mpm {
   color: antiquewhite;
+  text-shadow: 2px 2px 2px navy;
+}
+
+h4, #sign-in, #log-in {
   padding-top: 10px;
   font-size: 25px;
   font-weight: bold;
-  text-shadow: 2px 2px 2px navy;
+  
+}
+
+#result, #range, #mph, label {
+  font-weight: lighter;
+  font-size: 21px;
+  
+}
+
+#mpm {
+  font-weight: lighter;
+  font-size: 20px;
+
 }
 
 #time {
@@ -71,10 +81,6 @@ h4, #sign-in, #log-in {
 
 #distance {
   width: 300px;
-}
-.submit {
-  background-color: navy;
-  color: antiquewhite;
 }
 
 #weight, #feet, #inches, #miles, #hours, #minutes, #seconds {
@@ -85,39 +91,25 @@ h4, #sign-in, #log-in {
   border-width: medium;
 }
 
+#bmi-calc, #pace-calc, .btn {
+  border-color: darkgrey;
+  border-style: double;
+  border-width: thin;
+  background-color: navy;
+  color: antiquewhite;
+}
+
 #bmi-calc, #pace-calc {
   position: relative;
   left: 103px;
   margin-bottom: 7px;
-  border-color: darkgrey;
-  border-style: double;
-  border-width: thin;
 }
 
 .btn {
-  background-color: navy;
-  color: antiquewhite;
-  border-color: darkgrey;
-  border-style: double;
-  border-width: thin;
   font-size: 13px;
-}
-
-#result, #range, #mph, label {
-  color: antiquewhite;
-  font-weight: lighter;
-  font-size: 21px;
-  text-shadow: 2px 2px 2px navy;
 }
 
 #bmi-form {
     height: 478px;
 }
 
-#mpm {
-  color: antiquewhite;
-  font-weight: lighter;
-  font-size: 20px;
-  text-shadow: 2px 2px 2px navy;
-
-}
