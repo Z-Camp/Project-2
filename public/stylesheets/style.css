@@ -7,11 +7,6 @@ form.login {
   background-color: navy;
 }
 
-.btn {
-  background-color: navy;
-  color: antiqueantiquewhite;
-}
-
 .navbar-brand, #login, #signin {
   color: antiquewhite;
 }
@@ -23,7 +18,6 @@ body {
   font-weight: bolder;
   font-size: 24px
 }
-
 
 
 .form-top, h2 {
@@ -44,21 +38,46 @@ body {
   opacity: 0.85;
 }
 
-h4 {
+.login, .signup {
+  background-color: gray;
+  opacity: 0.85;
+  padding: 20px;
+  border-style: double;
+  border-color: navy;
+  border-width: thick;
+  
+}
+
+#activities {
+  background-color:gray;
+  border-style: double;
+  border-color: navy;
+  border-width: thick;
+  opacity: 0.85;
+  padding-bottom: 15px;
+}
+
+h4, #sign-in, #log-in {
   color: antiquewhite;
-  text-align: center;
   padding-top: 10px;
   font-size: 25px;
   font-weight: bold;
   text-shadow: 2px 2px 2px navy;
 }
 
+#time {
+  width: 306px;
+}
+
+#distance {
+  width: 300px;
+}
 .submit {
   background-color: navy;
   color: antiquewhite;
 }
 
-#weight, #feet, #inches, #distance, #hours, #minutes, #seconds {
+#weight, #feet, #inches, #miles, #hours, #minutes, #seconds {
   position: relative;
   left: 3px;
   border-color: #a5a5ad;
@@ -75,7 +94,16 @@ h4 {
   border-width: thin;
 }
 
-#result, #range, #mph {
+.btn {
+  background-color: navy;
+  color: antiquewhite;
+  border-color: darkgrey;
+  border-style: double;
+  border-width: thin;
+  font-size: 13px;
+}
+
+#result, #range, #mph, label {
   color: antiquewhite;
   font-weight: lighter;
   font-size: 21px;

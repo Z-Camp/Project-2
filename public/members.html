@@ -32,19 +32,20 @@
         <h2 class="form-top">Welcome <span class="member-name"></span></h2>
       </div>
     </div>
+    <br>
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h3 class="exercise-choice">Please Select Your Exercise</h3>
-        <form>
-          <input type="radio" name="activity" id="walking" value="walking">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <form id="activities">
+          <h4 class="exercise-choice text-center">Please Select Your Exercise</h4>
+          <input class="actType" type="radio" name="activity" id="walking" value="walking" data-type="walking">
           <label for="walking">Walking</label>
-          <input type="radio" name="activity" id="running" value="running">
+          <input class="actType" type="radio" name="activity" id="running" value="running"data-type="running">
           <label for="running">Running</label>
-          <input type="radio" name="activity" id="swimming" value="swimming">
+          <input class="actType" type="radio" name="activity" id="swimming" value="swimming"data-type="swimming">
           <label for="swimming">Swimming</label>
-          <input type="radio" name="activity" id="cycling" value="cycling">
+          <input class="actType" type="radio" name="activity" id="cycling" value="cycling"data-type="cycling">
           <label for="cycling">Cycling</label>
-          <input type="submit" onclick="progressToggle()">
+          <input type="submit" class="btn" id="act-btn" onclick="progressToggle()">
           </form>
       </div>
     </div>
@@ -54,7 +55,8 @@
       <div class="col-md-3 col-md-offset-3">
         <form class="form-inline">
           <div class="form-group mb-2">
-            <input type="text" class="form-control-plaintext" id="distance" placeholder="Distance (miles or meters)">
+            <br>
+            <input type="text" class="form-control" id="distance" placeholder="Distance (miles or meters)">
           </div>
         <!-- Going to add dropdown selections for miles and meters -->
         </form>
@@ -64,17 +66,19 @@
       <div class="col-md-3">
         <form class="form-inline">
           <div class="form-group mb-2">
-            <input type="text" class="form-control-plaintext" id="time" placeholder="Duration (minutes)">
+            <br>
+            <input type="text" class="form-control" id="time" placeholder="Duration (minutes)">
           </div>
           
         </form>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <p> <input type="date" id="calendar-drop" placeholder="mm/dd/yyyy"></div> </p>
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <br>
+        <p> <input type="date" id="calendar-drop" class="form-control" placeholder="mm/dd/yyyy"></div> </p>
       </div>
-      <div class="col-md-6 col-md-offset-3">
+      <div class="col-md-6 col-md-offset-3 text-center">
         <button type="button" class="btn btn-primary btn-lg" id="final-submit">Submit</button>
       </div>
     </div>
