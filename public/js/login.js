@@ -32,8 +32,10 @@ $(document).ready(function() {
         window.location.replace("/members");
         // If there's an error, log the error
       })
-      .catch(function(err) {
-        console.log(err);
-      });
+      .catch(handleLoginErr);
+  }
+  function handleLoginErr() {
+    $("#alert .msg").text('Email/Password incorrect');
+    $("#alert").fadeIn(500);
   }
 });
