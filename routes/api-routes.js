@@ -1,7 +1,7 @@
 // Requiring our models and passport as we've configured it
 var db = require("../models");
 var passport = require("../config/passport");
-
+// let loginInfo = require("../public/js/login")
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
@@ -49,5 +49,30 @@ module.exports = function(app) {
         id: req.user.id
       });
     }
+  });
+
+  // POST route for saving a new activity
+  app.post("/api/activities", function(req, res) {
+    console.log("line 65", req.body);
+    db.Activity.create({
+      activityType: req.body.activityType,
+      time: req.body.time,
+      distance: req.body.distance,
+      dateTime: req.body.date,
+      UserId: req.body.userId
+    }).then(function(dbActivity) {
+      res.json(dbActivity);
+    });
+  });
+  // GET route for returning all activity Data
+  app.get("/api/activities/:userId", function(req, res) {
+    db.Activity.findAll({
+      where: {
+        userId: req.params.userId
+      }
+    }).then(function(dbActivity) {
+      res.json(dbActivity);
+      console.log(dbActivity)
+    });
   });
 };
