@@ -21,7 +21,7 @@ module.exports = function(sequelize, DataTypes) {
   //when entering it into the database
   Activity.associate = function(models) {
     Activity.belongsTo(models.User, {
-      foreignKey: 'myUserId'
+      foreignKey: "UserId"
     });
   };
   return Activity;

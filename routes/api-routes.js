@@ -72,7 +72,7 @@ module.exports = function(app) {
       }
     }).then(function(dbActivity) {
       res.json(dbActivity);
-      console.log(dbActivity)
+      console.log(dbActivity);
     });
   });
 };

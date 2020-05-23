@@ -34,5 +34,4 @@ module.exports = function(app) {
   app.get("/tools", isAuthenticated, function(req, res) {
     res.sendFile(path.join(__dirname, "../public/tools.html"));
   });
-
 };
