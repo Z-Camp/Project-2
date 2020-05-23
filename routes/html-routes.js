@@ -30,4 +30,12 @@ module.exports = function(app) {
   app.get("/progress", isAuthenticated, function(req, res) {
     res.sendFile(path.join(__dirname, "../public/progress.html"));
   });
+<<<<<<< HEAD
+=======
+
+  app.get("/tools", isAuthenticated, function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/tools.html"));
+  });
+
+>>>>>>> 9d40dacb513e3de76bce389a37cffa559a3593ba
 };
