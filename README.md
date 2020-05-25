@@ -5,3 +5,4 @@ So you want to start getting into shape, but you've tried exercising before and 
 # Contributors
 
 Jason Meli - front-end
+Alec Weems - front-end
