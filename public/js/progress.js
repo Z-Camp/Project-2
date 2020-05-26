@@ -1,5 +1,6 @@
 $(document).ready(function() {
- $.get("/api/user_data").then(function (data) {
+  $.get("/api/user_data").then(function (data) {
+  
         let userId = data.id;
         $.get("/api/activities/" + userId).then(function (data) {
         console.log(data);

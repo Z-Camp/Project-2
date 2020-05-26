@@ -33,18 +33,20 @@ function renderChart(data, labels) {
               position: 'left',
               id: 'Time',
               ticks: {
-                max: 300,
+                max: 180,
                 min: 0,
-                stepSize: 50
+                fontColor: 'rgba(75, 192, 192, 0.2)',
+                stepSize: 5
             }
             }, {
               display: true,
               position: 'right',
               id: 'Distance',
               ticks: {
-                    max: 50,
+                    max: 30,
                     min: 0,
-                    stepSize: 5
+                    fontColor:'rgba(133, 35, 68, 1)',
+                    stepSize: 1
                 },
               // grid line settings
               gridLines: {
