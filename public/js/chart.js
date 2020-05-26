@@ -33,9 +33,7 @@ function renderChart(data, labels) {
               position: 'left',
               id: 'Time',
               ticks: {
-                max: 180,
-                min: 0,
-                fontColor: 'rgba(75, 192, 192, 0.2)',
+                fontColor: 'rgba(75, 192, 192, 1)',
                 stepSize: 5
             }
             }, {
@@ -43,14 +41,12 @@ function renderChart(data, labels) {
               position: 'right',
               id: 'Distance',
               ticks: {
-                    max: 30,
-                    min: 0,
                     fontColor:'rgba(133, 35, 68, 1)',
                     stepSize: 1
                 },
               // grid line settings
               gridLines: {
-                drawOnChartArea: false, // only want the grid lines for one axis to show up
+                drawOnChartArea: true, // only want the grid lines for one axis to show up
               },
             }],
           }
