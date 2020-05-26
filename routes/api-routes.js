@@ -69,7 +69,10 @@ module.exports = function(app) {
     db.Activity.findAll({
       where: {
         userId: req.params.userId
-      }
+      },
+      order: [
+        ["dateTime", "asc"]
+      ]
     }).then(function(dbActivity) {
       res.json(dbActivity);
       console.log(dbActivity);

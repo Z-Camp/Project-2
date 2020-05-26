@@ -22,7 +22,7 @@ $(document).ready(function () {
       activityType: actType,
       time: $("#time").val().trim(),
       distance:$("#distance").val().trim(),
-      date: (dt.getMonth()+1)+"/"+dt.getDate()+"/"+dt.getFullYear(),
+      date: $("#calendar-drop").val(),
       userId: userId
     };
 
