@@ -35,7 +35,7 @@ function renderChart(data, labels) {
               ticks: {
                 max: 180,
                 min: 0,
-                fontColor: 'rgba(75, 192, 192, 0.2)',
+                fontColor: 'rgba(75, 192, 192, 1)',
                 stepSize: 5
             }
             }, {
