@@ -9,3 +9,5 @@ Jason Meli - front-end
 Alec Weems - front-end
 
 Brandon Arnold - back-end
+
+Jerome Kapeller - data visualization
