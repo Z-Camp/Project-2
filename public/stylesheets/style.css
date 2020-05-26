@@ -39,7 +39,7 @@ body {
 .calc {
   max-width: 312px;
   padding-bottom: 20px;
- 
+
 }
 
 .login, .signup {
@@ -60,13 +60,13 @@ h4, #sign-in, #log-in {
   padding-top: 10px;
   font-size: 25px;
   font-weight: bold;
-  
+
 }
 
 #result, #range, #mph, label {
   font-weight: lighter;
   font-size: 21px;
-  
+
 }
 
 #mpm {
@@ -92,7 +92,7 @@ h4, #sign-in, #log-in {
   width: 100%;
   padding: 0.1em;
   box-sizing: border-box;
-  
+
 }
 
 #bmi-calc, #pace-calc, .btn {
