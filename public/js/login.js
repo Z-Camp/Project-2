@@ -35,7 +35,7 @@ $(document).ready(function() {
       .catch(handleLoginErr);
   }
   function handleLoginErr() {
-    $("#alert .msg").text("Email or password are incorrect");
+    $("#alert .msg").text('Email/Password incorrect');
     $("#alert").fadeIn(500);
   }
 });

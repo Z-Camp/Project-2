@@ -84,11 +84,15 @@ h4, #sign-in, #log-in {
 }
 
 #weight, #feet, #inches, #miles, #hours, #minutes, #seconds {
-  position: relative;
-  left: 3px;
+  /* position: relative; */
+  /* left: 3px; */
   border-color: #a5a5ad;
   border-style: outset;
   border-width: medium;
+  width: 100%;
+  padding: 0.1em;
+  box-sizing: border-box;
+  
 }
 
 #bmi-calc, #pace-calc, .btn {
