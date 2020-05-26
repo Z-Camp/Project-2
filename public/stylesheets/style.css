@@ -113,7 +113,7 @@ h4, #sign-in, #log-in {
   font-size: 13px;
 }
 
-#bmi-form {
+#bmi-form .calc {
     height: 478px;
 }
 
