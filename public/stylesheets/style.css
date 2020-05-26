@@ -28,7 +28,7 @@ body {
   background-color: white;
 }
 
-.calc, .login, .signup, #activities{
+.calc, .login, .signup, #activities, .table {
   border-style: double;
   border-color: navy;
   border-width: thick;
@@ -51,7 +51,7 @@ body {
   padding-bottom: 15px;
 }
 
-h4, #sign-in, #log-in, #result, #range, #mph, label, #mpm {
+h4, #sign-in, #log-in, #result, #range, #mph, label, #mpm, .table {
   color: antiquewhite;
   text-shadow: 2px 2px 2px navy;
 }
@@ -117,13 +117,7 @@ h4, #sign-in, #log-in {
     height: 478px;
 }
 
-.table {
-  border-color: darkgrey;
-  border-style: double;
-  border-width: thin;
-  background-color: navy;
-  color: antiquewhite;
-}
+
 #title-bar {
   display: flex;
   justify-content: center;
