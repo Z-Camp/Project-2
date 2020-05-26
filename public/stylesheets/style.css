@@ -125,3 +125,9 @@ h4, #sign-in, #log-in {
   font-size: 40px;
   font-weight: bolder;
 }
+
+.nav-span {
+    color: antiquewhite;
+    text-shadow: 2px 2px 2px grey;
+    font-size: 30px;
+}
